@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog view</title>
+</head>
+<body>
+<p>
+    <a href="/blogs">Blog list</a>
+</p>
+<table>
+    <tr>
+        <td>Title:</td>
+        <td th:text="${blog.title}"></td>
+    </tr>
+    <tr>
+        <td>Body:</td>
+        <td>
+            <textarea th:text="${blog.body}"></textarea>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
